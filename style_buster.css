@@ -1,0 +1,289 @@
+@font-face {
+	font-family: 'Conv_Anton-Regular[1]';
+	src: url('fonts/Anton-Regular[1].eot');
+	src: local('☺'), url('fonts/Anton-Regular[1].woff') format('woff'), url('fonts/Anton-Regular[1].ttf') format('truetype'), url('fonts/Anton-Regular[1].svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Conv_Merriweather-Light[1]';
+	src: url('fonts/Merriweather-Light[1].eot');
+	src: local('☺'), url('fonts/Merriweather-Light[1].woff') format('woff'), url('fonts/Merriweather-Light[1].ttf') format('truetype'), url('fonts/Merriweather-Light[1].svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+html {
+	margin-top: 0;
+	margin: 0;
+	overflow-y: auto;
+}
+
+body {
+	margin: 0px auto;
+	padding: 0px;
+}
+.mane {
+	width: 100%;
+	height: 1660px;
+	background-color: #091a32;
+	position: absolute;
+	margin: 0;
+	padding: 0;			
+}
+
+.content{
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.mane__conteiner {
+	width: 1100px;
+	margin: 0px 90px;
+}
+
+.header {
+	display: table;
+	position: relative;
+	top: -170px;
+	width: 100%;
+}
+
+.img__frame {
+	max-width: 120px;
+	position: relative;
+	top: 20px;
+	left: -50px;
+}
+
+.img__frame img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.logo {
+	display: table-cell;
+}
+
+.mane__logo {
+	color: white;
+	font-family: 'Conv_Anton-Regular[1]';
+	font-size: 60px;
+	border-bottom: 3px solid white;	
+}
+
+.about {
+	display: table-cell;
+	
+}
+
+.mane__about {
+	font-family: 'Conv_Merriweather-Light[1]';
+	font-size: 17px;
+	line-height: 25px;
+	color: white;
+	border-top: 3px solid white;
+	padding-top: 10px;
+	border-bottom: 3px solid white;
+	padding-bottom: 10px;
+	text-align: center;
+	position: relative;
+	top: -22px;
+	left: 20px;
+	max-width: 900px;
+}
+
+.mane__about2 {
+	display: none;
+}
+
+.mane__text {
+	background-color: white;
+	border-radius: 20px;
+	border: 2px solid white;
+	padding: 10px;
+	position: relative;
+	top: -220px;
+}
+
+.text__img1 {
+	height: 200px;
+	width: 200px;
+	border-radius: 20px;
+	float: left;
+	border: 3px solid #091a32;
+	margin-right: 10px;
+
+}
+
+.text__img {
+	width: 100%;
+	object-fit: contain;
+	border-radius: 15px;
+
+}
+
+.text__title {
+	color: black;
+	font-family: 'Conv_Anton-Regular[1]';
+	font-size: 60px;
+	padding-left: 100px;
+	margin: 0;
+}
+
+.text__subtitle {
+	font-family: 'Conv_Merriweather-Light[1]';
+	font-size: 18px;
+	color: black;
+	line-height: 25px;
+}
+
+.text__footer {
+	font-family: 'Conv_Merriweather-Light[1]';
+	font-size: 20px;
+	color: black;
+}
+
+@media (max-width: 1325px) {
+	.content {
+		width: 900px;
+	}
+	.mane__conteiner {
+		width: 800px;
+	}
+
+	.mane__about {
+		font-size: 14px;
+		line-height: 17px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
+@media (max-width: 992px) {
+	.content {
+		width: 700px;
+	}
+	.mane__conteiner {
+		width: 600px;
+	}
+	.mane__about {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 776px) {
+	.content {
+		width: 450px;
+	}
+	.mane__conteiner {
+		width: 350px;
+	}
+	.mane__logo{
+		font-size: 40px;
+	}
+	.img__frame {
+		width: 90px;
+		left: 0px;
+	}
+	.header {
+		top: -120px;
+	}
+	.mane__about{
+		display: none;
+	}
+	.mane__about2 {
+		display: flex;
+		font-family: 'Conv_Merriweather-Light[1]';
+		font-size: 12px;
+		line-height: 16px;
+		color: white;
+		border-top: 3px solid white;
+		padding-top: 10px;
+		border-bottom: 3px solid white;
+		padding-bottom: 10px;
+		position: relative;
+		left: 10px;
+		top: -2px;
+		text-align: center;
+	}
+	.mane__text {
+		top: -150px;
+	}
+	.text__img1 {
+		width: 130px;
+		height: 130px;
+	}
+	.text__title {
+		font-size: 30px;
+	}
+	.text__subtitle {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px) {
+	.content {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.mane__conteiner {
+		width: 275px;
+	}
+	.mane__logo {
+		font-size: 30px;
+	}
+	.img__frame {
+		width: 50px;
+		left: 15px;
+		top: 5px;
+	}
+	.header {
+		top: -80px;
+		left: -20px;
+	}
+	.mane__about2 {
+		font-size: 10px;
+		padding-top: 7px;
+		padding-bottom: 7px; 
+	}
+	.mane__text {
+		top: -100px;
+		width: 320px;
+		left: -75px;
+	}
+	audio {
+		width: 200px;
+	}
+	.text__img1 {
+		width: 120px;
+		height: 120px;
+	}
+}
+
+@media (max-width: 375px) {
+	.mane__conteiner {
+		width: 240px;
+	}
+
+	.mane__text {
+		width: 280px;
+	}
+
+	.mane__about2 {
+		font-size: 9px;
+	}
+}
